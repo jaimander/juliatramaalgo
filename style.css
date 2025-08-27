@@ -1,0 +1,373 @@
+@import url(//fonts.googleapis.com/css?family=Chakra+Petch);
+@import url(//fonts.googleapis.com/css?family=Work+Sans);
+@import url('https://fonts.googleapis.com/css2?family=Nata+Sans:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mozilla+Text:wght@200..700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0 auto;
+  text-decoration: none;
+  list-style: none;
+  /* font-family: 'Work Sans', sans-serif;*/
+  /*box-sizing: border-box;*/
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+body {
+  background: #f0f0f0;
+  /*font-family: 'Chakra Petch', sans-serif;*/
+  font-family: 'Work Sans', sans-serif;
+  font-family: "Mozilla Text", sans-serif;
+  font-weight: 400;
+  /* font-family: "Nata Sans", sans-serif; */
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
+  margin: 0 auto;
+}
+
+nav {
+  background: #ffffff;
+  height: 40px;
+  width: 100%;
+  padding: 1px 1px;
+  position: fixed;
+  display: inline;
+  margin-right: 0px;
+  z-index: 9;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0 0.3em;
+}
+
+table th {
+  text-align: left;
+  vertical-align: top;
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+
+.an {
+  padding-right: 30px;
+  width: 120px;
+  text-align: right;
+}
+
+#name {
+  display: inline;
+  margin-right: 0px;
+  padding: 6px 0px 0px 0px;
+  float: left;
+}
+
+#name p {
+  list-style: none;
+  display: inline;
+  font-size: 20px;
+  margin-left: 10px;
+  /* font-weight: bold; */
+  /*font-family: 'Chakra Petch', sans-serif;*/
+  font-family: "Nata Sans", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
+ 
+  /*padding: 50px 0px 0px 0px;*/
+}
+
+#name a:hover {
+}
+
+#name a {
+  color: rgb(0, 0, 255);
+}
+
+nav ul {
+  margin-top: 5px;
+  margin-left: 0px;
+  margin-right: 20px;
+  padding: 5px 0px 5px 0px;
+  list-style: none;
+  /* display: inline;*/
+  float: right;
+}
+
+nav {
+  display: inline;
+  margin-right: 0px;
+}
+
+nav li {
+  list-style: none;
+  display: inline;
+  font-size: 16px;
+  margin-left: 20px;
+  margin-top: 0px;
+  padding-top: 0px;
+  font-family: 'Chakra Petch', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
+ 
+}
+
+.checkbtn {
+  font-size: 20px;
+  color: rgb(0, 0, 255);
+  float: right;
+  line-height: 40px;
+  margin-right: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+#section--menu-mobile {
+  /*background: url(fondo.jpg) no-repeat;*/
+  background-size: cover;
+  background-position: center center;
+  height: calc(100vh - 40px);
+}
+
+@media (max-width: 658px) {
+  .checkbtn {
+    display: block;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgb(47, 47, 47);
+    top: 38px;
+    left: -120%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+    color: #ffffff;
+  }
+
+  nav ul li a {
+    font-size: 30px;
+    color: #ffffff;
+  }
+
+  li a:hover,
+  li a.active {
+    background: none;
+    color: rgb(212, 255, 0);
+
+  }
+
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+.gallery-container {
+  padding-top: 100px;
+  width: 60%;
+  display: grid;
+  gap: 4px;
+  grid-template-columns: repeat(3, minmax(20em, 1fr));
+  grid-auto-rows: 20em;
+  justify-content: center;
+}
+
+/*
+.contenedor-nombre-proyecto {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(212, 255, 0, 0.8);
+}*/
+
+.contenedor-nombre-proyecto {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(212, 255, 0, 0.8);
+  background-image: radial-gradient(rgb(212, 255, 0) 20%, transparent 21%);
+  background-size: 6px 6px; /* Tamaño del patrón */
+  color: black; /* Color del texto */
+}
+
+.nombre-proyecto {
+  color: rgb(0, 0, 0);
+ /* font-size: 24px;*/
+ font-size: 28px;
+  padding: 16px 32px;
+  vertical-align: middle;
+  /*padding-top: 50%;*/
+  font-family: 'Chakra Petch', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
+
+}
+
+.contenedor-nombre-proyecto:hover {
+  opacity: 1;
+}
+
+@media (max-width: 980px) {
+  .nombre-proyecto {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    padding: 16px 32px;
+    vertical-align: middle;
+    /*padding-top: 50%;*/
+    font-family: 'Chakra Petch', sans-serif;
+    font-family: "Space Grotesk", sans-serif;
+  }
+}
+
+/*  */
+
+.gallery__img {
+  opacity: 1;
+  /*display: block;*/
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: visible;
+  aspect-ratio: 1/1;
+}
+
+/* esto no funciona*/
+.gallery__img:hover {
+  opacity: 0;
+}
+
+.gallery__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.gallery__img,
+a {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 980px) {
+  .gallery-container {
+    grid-template-columns: repeat(3, minmax(4em, 1fr));
+    grid-auto-rows: minmax(4em, 1fr);
+    width: 100%;
+    left: 0px;
+    justify-content: normal;
+  }
+}
+
+@media (min-width: 1300px) {
+  .gallery-container {
+    grid-template-columns: repeat(3, minmax(4em, 1fr));
+    grid-auto-rows: minmax(4em, 1fr);
+    width: 75%;
+    left: 0px;
+    justify-content: normal;
+  }
+}
+
+.titulo,
+h1 {
+  margin-bottom: 20px;
+ /* font-family: 'Chakra Petch', sans-serif;*/
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 50px;
+}
+
+.section--descripcion {
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  width: 50%;
+  /*background-color: #b80e0e;*/
+}
+
+.descripcion--text,
+p {
+  padding-bottom: 40px;
+  line-height: 120%;
+}
+
+@media (max-width: 800px) {
+  .section--descripcion {
+    width: 80%;
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: rgb(0, 0, 255);
+}
+
+.about--title {
+  font-size: 30px;
+}
+
+h3 {
+  font-family: 'Chakra Petch', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
+  margin-bottom: 10px;
+  padding-bottom: 0;
+}
+
+.nav-link a:hover {
+  color: rgb(0, 0, 255);
+}
+
+.contenedor-img{
+  width: 100%;
+}
+
+.contenedor-img img{
+  width: 100%;
+}
+
+.p5-sketch{
+  width: 100%;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 -> 9 / 16 = 0.5625 */
+  height: 0;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

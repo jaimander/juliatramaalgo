@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&family=Playwrite+DE+SAS:wght@100..400&display=swap");
+
+body {
+  background-color: #fffade;
+}
+
+#contenedor-general {
+  padding-top: 100px;
+  width: 100%;
+}
+
+#contenedor-logo {
+  width: 20%;
+  margin-left: 40%;
+}
+
+#contenedor-logo img {
+  width: 100%;
+}
+
+#contenedor-texto-presentacion {
+  padding-top: 100px;
+  width: 40%;
+  margin-left: 30%;
+  padding-bottom: 100px;
+}
+
+p {
+  font-family: "Playwrite DE Grund", cursive;
+  font-size: 18px;
+  color: #273617;
+}
+
+i {
+  font-family: "Playwrite DE SAS", cursive;
+  font-size: 18px;
+  color: #273617;
+}
+
+h2 {
+  font-family: "Playwrite DE Grund", cursive;
+  color: #273617;
+}

@@ -6,7 +6,7 @@ body {
 }
 
 #contenedor-general {
-  padding-top: 100px; 
+  padding-top: 100px;
   width: 100%;
 }
 
@@ -26,24 +26,35 @@ body {
   justify-content: space-around;
   align-items: center;
   margin-left: auto;
-   margin-right: auto;
+  margin-right: auto;
   margin-top: 50px;
   gap: 20px; /* espacio entre logos */
+  position: relative;
+  /*outline-style: solid;*/
 }
 
 #contenedor-logos img {
-  max-height: 70px;   /* límite máximo de altura */
-  width: auto;        /* mantiene proporción */
+  max-height: 50px; /* límite máximo de altura */
+  max-width: auto; /* mantiene proporción */
   object-fit: contain; /* asegura que encaje sin deformarse */
-  display: block;     /* quita espacios fantasmas de inline */
-  
+  display: block; /* quita espacios fantasmas de inline */
+}
+
+#contenedor-oveja {
+  width: 10%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#contenedor-oveja img {
+  width: 100%;
 }
 
 #contenedor-texto-presentacion {
   padding-top: 50px;
-  width: 40%;
-  margin-left: 30%;
-  padding-bottom: 100px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 p {
@@ -102,6 +113,9 @@ h2 {
     padding-top: 50px;
     padding-bottom: 50px;
   }
+  #contenedor-oveja {
+    width: 30%;
+  }
 
   p,
   i {
@@ -137,6 +151,10 @@ h2 {
     padding-bottom: 30px;
   }
 
+  #contenedor-oveja {
+    width: 40%;
+  }
+
   p,
   i {
     font-size: 15px;
@@ -148,4 +166,13 @@ hr {
   height: 2px; /* grosor de la línea */
   background-color: #333; /* color de la línea */
   margin: 20px 0; /* espacio arriba y abajo */
+}
+
+@media (min-width: 1800px) {
+  #contenedor-logos img {
+    max-height: 80px; /* límite máximo de altura */
+    max-width: auto; /* mantiene proporción */
+    object-fit: contain; /* asegura que encaje sin deformarse */
+    display: block; /* quita espacios fantasmas de inline */
+  }
 }

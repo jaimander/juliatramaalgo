@@ -30,7 +30,7 @@ body {
 }
 
 #contenedor-logos img {
-  height: 50px; /* misma altura para ambos logos */
+  height: 90px; /* misma altura para ambos logos */
   width: auto; /* mantiene proporción */
   object-fit: contain;
 }

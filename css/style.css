@@ -25,15 +25,18 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 0 auto; /* centra */
+  margin-left: auto;
+   margin-right: auto;
   margin-top: 50px;
   gap: 20px; /* espacio entre logos */
 }
 
 #contenedor-logos img {
-  height: 90px; /* misma altura para ambos logos */
-  width: auto; /* mantiene proporción */
-  object-fit: contain;
+  max-height: 70px;   /* límite máximo de altura */
+  width: auto;        /* mantiene proporción */
+  object-fit: contain; /* asegura que encaje sin deformarse */
+  display: block;     /* quita espacios fantasmas de inline */
+  
 }
 
 #contenedor-texto-presentacion {

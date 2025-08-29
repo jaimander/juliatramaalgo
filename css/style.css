@@ -1,13 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&family=Playwrite+DE+SAS:wght@100..400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HR:wght@100..400&display=swap');
 
 body {
   /*background-color: #fffade;*/
   background-color: #fff8e4;
+  margin: 0;
 }
 
 #contenedor-general {
   padding-top: 100px;
   width: 100%;
+  padding-bottom: 100px;
+  margin: 0;
 }
 
 #contenedor-logo {
@@ -64,12 +68,13 @@ p {
 }
 
 i {
-  font-family: "Playwrite DE SAS", cursive;
+  font-family: "Playwrite HR", cursive;
   font-size: 18px;
   color: #273617;
 }
 
 h2 {
+  /*font-family: "Playwrite DE Grund", cursive;*/
   font-family: "Playwrite DE Grund", cursive;
   color: #273617;
 }
@@ -115,7 +120,7 @@ h2 {
   }
   #contenedor-oveja {
     width: 30%;
-  }
+   }
 
   p,
   i {
@@ -186,4 +191,9 @@ a{
 a:hover{
   color: #f98435; 
   cursor: pointer;
+}
+
+.simbolo {
+  font-family: "Arial Unicode MS", "Segoe UI Symbol", "Noto Sans Symbols", sans-serif;
+  font-size: 1.2em;
 }

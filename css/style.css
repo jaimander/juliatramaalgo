@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&family=Playwrite+DE+SAS:wght@100..400&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+HR:wght@100..400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+HR:wght@100..400&display=swap");
 
 body {
   /*background-color: #fffade;*/
@@ -120,7 +120,7 @@ h2 {
   }
   #contenedor-oveja {
     width: 30%;
-   }
+  }
 
   p,
   i {
@@ -182,18 +182,30 @@ hr {
   }
 }
 
-a{
+a {
   text-decoration: none;
   color: #333;
   cursor: pointer;
 }
 
-a:hover{
-  color: #f98435; 
+a:hover {
+  color: #f98435;
   cursor: pointer;
 }
 
 .simbolo {
-  font-family: "Arial Unicode MS", "Segoe UI Symbol", "Noto Sans Symbols", sans-serif;
+  font-family: "Arial Unicode MS", "Segoe UI Symbol", "Noto Sans Symbols",
+    sans-serif;
   font-size: 1.2em;
+}
+
+#boton {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #f98435;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 16px;
+ 
 }

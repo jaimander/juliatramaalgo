@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -77,7 +77,14 @@
             src="https://www.youtube.com/embed/l2nMRoeqmfI?si=s1zryqD_x2ZOD10h"
             title="YouTube video player"
             frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allow="
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+            "
             allowfullscreen
           ></iframe>
         </div>
@@ -132,7 +139,14 @@
             src="https://www.youtube.com/embed/HI4Zl2Y3XKk?si=2goKYc-asWamz0Zd"
             title="YouTube video player"
             frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allow="
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+            "
             allowfullscreen
           ></iframe>
         </div>
@@ -151,19 +165,26 @@
           Programación <br />
           <br />
 
-           <a href="https://www.instagram.com/nikolairubio/"
+          <a href="https://www.instagram.com/nikolairubio/"
             ><b>Nikolai Rubio <span class="simbolo">↗</span></b></a
           >
           <br />
           Diseño y animación de personajes <br />
           <br />
 
-           <a href="https://www.instagram.com/inari.artist/"
+          <a href="https://www.instagram.com/inari.artist/"
             ><b>Maribel López <span class="simbolo">↗</span></b></a
           >
           <br />
           Dirección de arte <br />
           Diseño de props y escenarios <br />
+          <br />
+
+          <b>Alejandro Izquierdo</b>
+          <br />
+          Guía de personajes <br />
+          Investigación histórica y etnográfica
+          <br />
         </p>
 
         <br />
@@ -186,13 +207,91 @@
           <b>Carlos Bernal</b> <br />
           Artesano textil, diseñador y productor de ruanas de Aquitania,
           Boyacá<br />
+          <br />
         </p>
+
+        <hr />
+        <h2>Personajes</h2>
+        <p>
+          El guion del juego salta entre tres momentos:
+          <i>Julia a los 6 años</i> aprendiendo el oficio de sus padres (1946),
+          <i>Julia a los 35</i> cuidando a su familia y cumpliendo encargos de
+          tejido (1975), y <i>Julia a los 85</i> acompañando a su hijo
+          <i>Marco</i> en su taller-almacén (2025). Los personajes aquí
+          descritos son la arquitectura invisible que le da coherencia emocional
+          a esos tres saltos temporales. <br /><br />
+          Los nombres en esta historia ─<i
+            >Trámulo, Hilana, Urdeliano, Lisandro</i
+          >─ son nombres propios de raigambre campesina boyacense, que evocan un
+          mundo oral donde cada persona lleva en su nombre una pequeña historia.
+        </p>
+        <br />
+        <div class="contenedor-arbol-genealogico">
+          <img src="assets/julia_arbol_genealogico.png" />
+          <div
+            class="cuadro-personaje"
+            id="cuadro-hilana"
+            data-nombre="Hilana"
+          ></div>
+          <div
+            class="cuadro-personaje"
+            id="cuadro-tramulo"
+            data-nombre="Tramulo"
+          ></div>
+          <div
+            class="cuadro-personaje"
+            id="cuadro-lucia"
+            data-nombre="cuadro-lucia"
+          ></div>
+          <div
+            class="cuadro-personaje"
+            id="cuadro-augusto"
+            data-nombre="Augusto"
+          ></div>
+          <div
+            class="cuadro-personaje"
+            id="cuadro-julia"
+            data-nombre="Julia"
+          ></div>
+          <div
+            class="cuadro-personaje"
+            id="cuadro-urdeliano"
+            data-nombre="Urdeliano"
+          ></div>
+          <div
+            class="cuadro-personaje"
+            id="cuadro-marco"
+            data-nombre="cuadro-marco"
+          ></div>
+          <div
+            class="cuadro-personaje"
+            id="cuadro-claudia"
+            data-nombre="Claudia"
+          ></div>
+          <div
+            class="cuadro-personaje"
+            id="cuadro-pedro"
+            data-nombre="Pedro"
+          ></div>
+          <div
+            class="cuadro-personaje"
+            id="cuadro-lisandro"
+            data-nombre="Lisandro"
+          ></div>
+        </div>
         <hr />
         <br />
         <br />
       </div>
       <div id="contenedor-oveja">
         <img src="assets/oveja.png" id="imagen-oveja" />
+      </div>
+
+      <div id="info-personajes">
+        <p id="boton-cerrar"><b>✖</b></p>
+        <div class="col imagen"></div>
+        <div class="col cuadro"></div>
+        <div class="col historia"></div>
       </div>
     </div>
   </body>

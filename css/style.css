@@ -209,3 +209,75 @@ a:hover {
   font-size: 16px;
  
 }
+
+.contenedor-arbol-genealogico{
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: auto;
+  background-color: #fffcf2;
+  position: relative;
+}
+
+.contenedor-arbol-genealogico img{
+  width: 100%;
+  min-width: 1000px;
+  max-width: none;
+}
+
+.cuadro-personaje{
+  /*
+  border-style: solid;
+  border-color: red;
+  */
+  position: absolute;
+}
+
+.cuadro-personaje:hover{
+  cursor: pointer;
+
+}
+
+#info-personajes{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /*background-color: rgba(237, 245, 145, 0.4);*/
+  background-color: rgba(237, 245, 145);
+  visibility: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0px;
+}
+
+.col{
+  padding: 20px;
+  border-style: solid;
+  border-width: 1px;
+}
+
+#boton-cerrar{
+  font-size: 30px;
+  position: fixed;
+  top: 0;
+  right: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+#boton-cerrar:hover{
+  cursor: pointer;
+}
+
+#boton-cerrar b{
+  padding: 0;
+  margin: 0;
+}
+
+
+
+
+
+
+

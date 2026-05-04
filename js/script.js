@@ -36,6 +36,8 @@ const personajes = {
           "La primera maestra real de Julia. Le enseña a hilar y a torcer el hilo con facilidad destacable.",
       },
     ],
+    historia:
+      "Hilana nació en 1913 en una vereda a dos horas a pie del caserío donde viviría de casada. Su madre también hilaba; su abuela también. No se sabe quien fue el primer familiar en comenzar con la labor. Desde pequeña aprendió que el hilo tiene que torcerse para ser resistente, pues dos hebras débiles juntas hacen una hebra fuerte. Esa es la primera lección que le transmite a Julia, y es también una metáfora de su propia vida. \n\n Se casó con Trámulo en 1929, con dieciséis años. No fue un matrimonio de amor romántico sino de afinidad de oficio y de clase. Dos familias artesanas que se reconocen. El cariño llegó después, como llega en esos mundos, despacio y sin anunciarse. \n\n Tuvo a Augusto en 1930, y luego otros hijos que no murieron pequeños, la mortalidad infantil de la época era alta en el campo boyacense. Julia nació en 1940, 11 años después de Augusto. Esa distancia con Augusto sugiere años difíciles en el medio, años de duelo y de trabajo sin pausa. Además, el hecho de que solo dos hijos sobrevivieran en una etapa tan incipiente de la consolidación de la familia en el campo boyacense sugiere situaciones adversas y dificultad económica.",
   },
 
   tramulo: {
@@ -59,6 +61,7 @@ const personajes = {
           "Padre amoroso pero contenido, como lo permite la cultura campesina de la época. Julia lo admira sin que él lo sepa.",
       },
     ],
+    historia: "Trámulo nació en 1906, el segundo de siete hijos de un tejedor de veredas altas del municipio. Su padre le enseñó el oficio en un telar de palo que todavía huele a lana mojada y a madera de cedro. Aprendió a tejer antes de aprender a leer. Los números le llegaron por la cuenta de las pasadas, no por la escuela. \n\n En su juventud trabajó temporadas en una hacienda cercana como jornalero, pero siempre regresó al telar. Hacia 1929 se casó con Hilana, una muchacha del mismo caserío que hilaba con huso mejor que nadie en tres veredas a la redonda. Juntos armaron una casa de tapia con tres cuartos: uno para dormir, uno para tejer, uno para lo demás. \n\n Su vida adulta transcurre entre el telar y las vacas. Tiene tres reses, un par de ovejas y una parcela para la siembra de papa y cebada. Los ingresos del tejido son escasos pero estables: los vecinos le encargan ruanas para bautizos, comuniones y matrimonios, y él las teje con la misma seriedad con que otros van a misa. \n\n La ruana que aparece en el guion (la de color miel, que Hilana le hace a Trámulo porque la anterior le fue robada) es uno de los objetos narrativos más importantes del juego. Esa ruana recorre cincuenta años: la lleva Trámulo, luego pasa a Marco, luego a Lisandro."
   },
 
   lucia: {
@@ -81,6 +84,7 @@ const personajes = {
         valor: "Prima menor. Clienta. Red de apoyo cotidiano.",
       },
     ],
+    historia: "Lucía es tres años menor que Julia. Creció en una casa aledaña, criada por su abuela y su madre, tía de Julia.  Se casó con un cultivador de cebolla y sus hijos trabajan en eso. No aprendió a tejer formalmente, aunque sabe los rudimentos, pues su madre también era tejedora. \n\n La visita de Lucía a Julia en 1975 es una escena de familiaridad femenina campesina donde se comparte información, lana prestada, complicidad. Lucía menciona que la cebolla da para vivir mejor que el tejido, y Julia lo escucha sin comprometerse. Esa tensión de la cebolla como alternativa económica que muchos vecinos eligieron es el trasfondo económico del segundo acto. \n\n Lucía también representa el encargo de Julia más inminente en 1975: la ruana para la nieta recién nacida de la hija de Lucía, Claudia. El tejido es un ritual de bienvenida en esta familia y en este mundo, nacer merece una ruana."
   },
 
   augusto: {
@@ -104,6 +108,7 @@ const personajes = {
           "Hermano mayor distante por la diferencia de edad, pero figura de referencia. Julia teje la ruana que Trámulo le está haciendo.",
       },
     ],
+    historia: "Augusto tiene 17 años cuando empieza el juego. Es alto, callado como su padre, y tiene ya la espalda ancha de quien trabaja desde los diez años. Ordeña vacas, siembra papa, ayuda en el cocido. No aprendió a tejer, pues le faltó la paciencia lenta del telar, y para cuando hubiera podido aprenderlo, la cebolla larga ya empezaba a ser negocio y el jornal de campo pagaba más que una ruana. \n\n Cuando Julia tiene 6 años, Augusto ya está en la edad de pensar en casarse y en independizarse. Esa ruana que Trámulo lleva meses tejiendo para él es, en cierto modo, la última prenda que lo vincula al oficio familiar: cuando la reciba, ya habrá elegido otro camino. \n\n En los años siguientes, Augusto trabaja en los cultivos de la zona, se casa con una mujer de vereda vecina y tiene sus propios hijos. Su relación con Julia es cordial pero distante. Se ven en fiestas y velorios, se ayudan cuando hace falta. Él no aprendió el tejido, pero sabe valorar una buena ruana cuando la ve."
   },
 
   julia: {
@@ -155,6 +160,7 @@ const personajes = {
           "Esposo compañero pero no dominante. Los dos tienen su oficio propio y se respetan en ello.",
       },
     ],
+    historia: "Urdeliano nació en 1927 y quedó viudo joven, antes de casarse con Julia. Su primer matrimonio no tuvo hijos o los hijos murieron; el guion no lo especifica, pero su vida hasta los treinta y uno habla de un hombre que ya conoce la pérdida. \n\n Se casó con Julia en 1958. Lo que los unió no fue solo el amor sino la complementariedad, pues ella teje, él talla las herramientas del tejido (husos, peines del telar, cardas). Son dos artesanías que se necesitan. Construyó para Julia un taller con telar propio, que es el espacio doméstico central del juego en 1975. Urdeliano esquila las ovejas, cuida el ganado, hace los trabajos pesados del campo. No es un hombre expresivo pero sí confiable. Cada acción en el guion lo muestra yendo y viniendo con propósito. Cuando sale con Pedro a esquilar a Luna en 1975, el gesto es ordinario y aún así carga de significado al juego: mantener la cadena de la lana. \n\n Muere en los años noventa, *no especificaré si es producto de la violencia o de alguna enfermedad o accidente de trabajo*. Su ausencia en 2025 está implícita en que Julia habla de “los tiempos de antes” sin mencionar a su esposo, y en que Marco tiene el taller como propio, no compartido.",
   },
 
   marco: {
@@ -179,6 +185,7 @@ const personajes = {
           "Hijo y discípulo. Julia lo mira tejer como su padre la miraba a ella.",
       },
     ],
+    historia: "Marco nació en 1975, el último de los doce hijos de Julia y Urdeliano. Que haya nacido el mismo día en que Pedro y Urdeliano fueron a esquilar a la oveja Luna es un detalle importante, pues Marco llega al mundo con el ciclo de la lana. \n\n Creció en el taller de su madre. Mientras sus hermanos se iban o a la ciudad, a la cebolla, al jornal, Marco se quedaba. Fue una decisión gradual y no algo premeditado, no necesariamente tenía esa intención. A los diez u once años Julia lo puso a sentarse al lado del telar. A los quince ya sabía tejer. A los veinte tenía su propio telar.*No es la historia de Marco, el entrevistado, es una historia modificada a conveniencia para representar precisamente esa “universalidad” del tejido de ruanas boyacense que queremos representar.* \n\n En su juventud, en los años noventa, la ruana artesanal comenzó a perder mercado frente a las importadas de Ecuador y China, y luego frente a las sintéticas. Marco lo vio venir y no se fue, prefirió montar el almacén en el centro del pueblo, aprendió a hablar con turistas, aprendió a explicar la diferencia entre lana natural y acrílico. \n\n En la adultez, Marco descubrió internet como herramienta de aprendizaje textil. Tiene un soporte casero para el celular sobre el telar y aprende patrones con profesores de Chile y de Perú. Ha intentado organizarse con otros artesanos para buscar apoyo del gobierno, sin resultado hasta 2025. Ese fracaso institucional lo ha hecho más escéptico pero no menos persistente. Tiene una esposa *cuyo nombre e historia pueden desarrollarse en futuras versiones del guion* que trabaja con él en el taller. Su hijo Lisandro ya muestra interés en el oficio.",
   },
 
   claudia: {
@@ -223,6 +230,7 @@ const personajes = {
         valor: "Hijo de confianza en la casa. Julia lo regaña con cariño.",
       },
     ],
+    historia: "Pedro tiene 16 años en 1975. Es el primogénito que llegó a adulto (o el mayor de los que sobrevivieron). Ayuda a su padre con el campo y las ovejas. Tiene sentido del humor, un ejemplo es su comentario sobre la ruana del abuelo que no se quita ni para dormir es el primer momento de levedad del segundo acto. \n\n La ruana que le dio el abuelo Trámulo es su objeto de identidad: tiene “casi un año” usándola sin quitársela. Eso lo vincula, sin saberlo, a la cadena textil de la familia. Pero Pedro no aprenderá a tejer. En los años siguientes probablemente se irá al cultivo de cebolla como los hijos de Lucía, o encontrará trabajo en algún pueblo mayor. \n\n Su función narrativa en el juego es mostrar el contraste con Marco, ya que ambos son hijos de Julia, pero solo uno continúa el oficio. Pedro representa a los once hijos que no lo hicieron, o no sobrevivieron. ",
   },
 
   lisandro: {
@@ -247,6 +255,7 @@ const personajes = {
           "Nieto y alumno ocasional. Julia lo llama “papito” y “mi chinito”.",
       },
     ],
+    historia: "Lisandro nació en 2015. Creció viendo a su padre tejer, a su madre ayudarlo, y a su abuela Julia venir al taller los sábados. A los ocho años empezó a hacer bufandas en un telar pequeño que Marco le armó. A los diez ya las teje bien. \n\n Es un niño de su época. Ya tiene celular, le gustan los videojuegos, va al colegio del pueblo donde lo llaman a hacer tareas en computador. Pero también sabe cardar lana y distinguir la calidad de una fibra con los dedos. No hay contradicción en él porque todavía es demasiado joven para sentirla. \n\n La ruana de color miel de Trámulo (que Marco le va a dar) es el objeto que lo conecta con cuatro generaciones. Cuando la reciba, tendrá en los hombros casi un siglo de tejido familiar. No lo sabrá todavía."
   },
 };
 
@@ -416,6 +425,7 @@ observer.observe(img);
 let ventanaPersonajes = document.getElementById("ventana-personajes");
 let nombrePersonaje = document.getElementById("nombre-personaje");
 let imagenPersonaje = document.getElementById("imagen-personaje");
+let historiaPersonaje = document.getElementById("historia-personaje");
 
 document.addEventListener("click", function (e) {
   const cuadro = e.target.closest(".cuadro-personaje");
@@ -432,88 +442,29 @@ document.addEventListener("click", function (e) {
 
   actualizarFicha(personaje);
 
+  this.body.style.overflowY = "hidden";
+
   ventanaPersonajes.style.visibility = "visible";
-
-  // Tramulo
-  if (cuadro.dataset.nombre == "Tramulo") {
-    ventanaPersonajes.style.visibility = "visible";
-    imagenPersonaje.src = "assets/personajes/Tramulo_.png";
-    nombrePersonaje.textContent = "Tramulo";
-  }
-
-  // Tramulo
-  if (cuadro.dataset.nombre == "Lucia") {
-    ventanaPersonajes.style.visibility = "visible";
-    imagenPersonaje.src = "assets/personajes/Lucia_.png";
-    nombrePersonaje.textContent = "Lucia";
-  }
-
-  // Augusto
-  if (cuadro.dataset.nombre == "Augusto") {
-    ventanaPersonajes.style.visibility = "visible";
-    imagenPersonaje.src = "assets/personajes/Augusto_.png";
-    nombrePersonaje.textContent = "Augusto";
-  }
-
-  // Julia
-  if (cuadro.dataset.nombre == "Julia") {
-    ventanaPersonajes.style.visibility = "visible";
-    imagenPersonaje.src = "assets/personajes/Julia idle.png";
-    nombrePersonaje.textContent = "Julia";
-  }
-
-  // Urdeliano
-  if (cuadro.dataset.nombre == "Urdeliano") {
-    ventanaPersonajes.style.visibility = "visible";
-    imagenPersonaje.src = "assets/personajes/Urdeliano.png";
-    nombrePersonaje.textContent = "Urdeliano";
-  }
-
-  // Urdeliano
-  if (cuadro.dataset.nombre == "Marco") {
-    ventanaPersonajes.style.visibility = "visible";
-    imagenPersonaje.src = "assets/personajes/Marco.png";
-    nombrePersonaje.textContent = "Marco";
-  }
-
-  // Claudia
-  if (cuadro.dataset.nombre == "Claudia") {
-    ventanaPersonajes.style.visibility = "visible";
-    imagenPersonaje.src = "assets/personajes/claudia vacio.png";
-    nombrePersonaje.textContent = "Claudia";
-  }
-
-  // Pedro
-  if (cuadro.dataset.nombre == "Pedro") {
-    ventanaPersonajes.style.visibility = "visible";
-    imagenPersonaje.src = "assets/personajes/pedro vacio.png";
-    nombrePersonaje.textContent = "Pedro";
-  }
-
-  // Lisandro
-  if (cuadro.dataset.nombre == "Lisandro") {
-    ventanaPersonajes.style.visibility = "visible";
-    imagenPersonaje.src = "assets/personajes/Lisandro.png";
-    nombrePersonaje.textContent = "Lisandro";
-  }
 });
 
 let botonCerrar = document.getElementById("boton-cerrar");
 
 botonCerrar.onclick = function () {
   ventanaPersonajes.style.visibility = "hidden";
+  document.body.style.overflowY = "visible";
 };
 
 function actualizarFicha(personaje) {
   nombrePersonaje.textContent = personaje.nombre;
   imagenPersonaje.src = personaje.imagen;
+  historiaPersonaje.innerHTML = personaje.historia;
   const tabla = document.getElementById("tabla-personaje");
   tabla.innerHTML = "";
 
   personaje.datos.forEach((item) => {
     const fila = document.createElement("tr");
     fila.innerHTML = `
-      <td>${item.label}</td>
+      <td class="atributo">${item.label}</td>
       <td>${item.valor}</td>
     `;
     tabla.appendChild(fila);

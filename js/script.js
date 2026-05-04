@@ -178,29 +178,94 @@ const observer = new ResizeObserver((entries) => {
 
 observer.observe(img);
 
-let infoPersonajes = document.getElementById("info-personajes");
+let ventanaPersonajes = document.getElementById("ventana-personajes");
+let nombrePersonaje = document.getElementById("nombre-personaje");
+let imagenPersonaje = document.getElementById("imagen-personaje");
 
-document.addEventListener('click', function(e) {
-  const cuadro = e.target.closest('.cuadro-personaje');
+document.addEventListener("click", function (e) {
+  const cuadro = e.target.closest(".cuadro-personaje");
 
   if (!cuadro) return;
 
   // equivalente al console.log del primer código
-  console.log('Click en:', cuadro);
+  console.log("Click en:", cuadro);
 
   // equivalente al segundo código
-  console.log('Nombre:', cuadro.dataset.nombre);
+  console.log("Nombre:", cuadro.dataset.nombre);
 
-  if(cuadro.dataset.nombre == "Hilana"){
-    infoPersonajes.style.visibility = "visible";
+  // Hilana
+  if (cuadro.dataset.nombre == "Hilana") {
+    ventanaPersonajes.style.visibility = "visible";
+    imagenPersonaje.src = "assets/personajes/Hilana_.png";
+    nombrePersonaje.textContent = "Hilana";
+  }
+
+  // Tramulo
+  if (cuadro.dataset.nombre == "Tramulo") {
+    ventanaPersonajes.style.visibility = "visible";
+    imagenPersonaje.src = "assets/personajes/Tramulo_.png";
+    nombrePersonaje.textContent = "Tramulo";
+  }
+
+  // Tramulo
+  if (cuadro.dataset.nombre == "Lucia") {
+    ventanaPersonajes.style.visibility = "visible";
+    imagenPersonaje.src = "assets/personajes/Lucia_.png";
+    nombrePersonaje.textContent = "Lucia";
+  }
+
+  // Augusto
+  if (cuadro.dataset.nombre == "Augusto") {
+    ventanaPersonajes.style.visibility = "visible";
+    imagenPersonaje.src = "assets/personajes/Augusto_.png";
+    nombrePersonaje.textContent = "Augusto";
+  }
+
+  // Julia
+  if (cuadro.dataset.nombre == "Julia") {
+    ventanaPersonajes.style.visibility = "visible";
+    imagenPersonaje.src = "assets/personajes/Julia idle.png";
+    nombrePersonaje.textContent = "Julia";
+  }
+
+  // Urdeliano
+  if (cuadro.dataset.nombre == "Urdeliano") {
+    ventanaPersonajes.style.visibility = "visible";
+    imagenPersonaje.src = "assets/personajes/Urdeliano.png";
+    nombrePersonaje.textContent = "Urdeliano";
+  }
+
+  // Urdeliano
+  if (cuadro.dataset.nombre == "Marco") {
+    ventanaPersonajes.style.visibility = "visible";
+    imagenPersonaje.src = "assets/personajes/Marco.png";
+    nombrePersonaje.textContent = "Marco";
+  }
+
+  // Claudia
+  if (cuadro.dataset.nombre == "Claudia") {
+    ventanaPersonajes.style.visibility = "visible";
+    imagenPersonaje.src = "assets/personajes/claudia vacio.png";
+    nombrePersonaje.textContent = "Claudia";
+  }
+
+  // Pedro
+  if (cuadro.dataset.nombre == "Pedro") {
+    ventanaPersonajes.style.visibility = "visible";
+    imagenPersonaje.src = "assets/personajes/pedro vacio.png";
+    nombrePersonaje.textContent = "Pedro";
+  }
+
+  // Lisandro
+  if (cuadro.dataset.nombre == "Lisandro") {
+    ventanaPersonajes.style.visibility = "visible";
+    imagenPersonaje.src = "assets/personajes/Lisandro.png";
+    nombrePersonaje.textContent = "Lisandro";
   }
 });
 
 let botonCerrar = document.getElementById("boton-cerrar");
 
-botonCerrar.onclick = function() {
-  infoPersonajes.style.visibility = "hidden";
-}
-
-
-
+botonCerrar.onclick = function () {
+  ventanaPersonajes.style.visibility = "hidden";
+};

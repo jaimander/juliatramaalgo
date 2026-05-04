@@ -241,7 +241,7 @@
           <div
             class="cuadro-personaje"
             id="cuadro-lucia"
-            data-nombre="cuadro-lucia"
+            data-nombre="Lucia"
           ></div>
           <div
             class="cuadro-personaje"
@@ -261,7 +261,7 @@
           <div
             class="cuadro-personaje"
             id="cuadro-marco"
-            data-nombre="cuadro-marco"
+            data-nombre="Marco"
           ></div>
           <div
             class="cuadro-personaje"
@@ -287,11 +287,51 @@
         <img src="assets/oveja.png" id="imagen-oveja" />
       </div>
 
-      <div id="info-personajes">
-        <p id="boton-cerrar"><b>✖</b></p>
-        <div class="col imagen"></div>
-        <div class="col cuadro"></div>
-        <div class="col historia"></div>
+      <div id="ventana-personajes">
+        <div class="contenedor-nombre-personajes">
+          <h2 id="nombre-personaje"></h2>
+        </div>
+        <div class="info-personajes">
+          <p id="boton-cerrar"><b>✖</b></p>
+          <!-- columna 1-->
+          <div class="col imagen">
+            <div class="contenedor-imagen-personaje">
+              <img id="imagen-personaje" src="" />
+            </div>
+          </div>
+          <!-- columna 2-->
+          <div class="col tabla">
+            <table>
+              <tr>
+                <td>Año de nacimiento</td>
+                <td>1906</td>
+              </tr>
+              <tr>
+                <td>Edad en el juego</td>
+                <td>40 años (1946)</td>
+              </tr>
+              <tr>
+                <td>Oficio</td>
+                <td>Tejedor de ruanas en telar de palo. Ganadero menor.</td>
+              </tr>
+              <tr>
+                <td>Rasgo central</td>
+                <td>
+                  Hombre de pocas palabras y manos muy hábiles. Enseña con el
+                  ejemplo, no con el discurso.
+                </td>
+              </tr>
+              <tr>
+                <td>Relación con Julia</td>
+                <td>
+                  Padre amoroso pero contenido, como lo permite la cultura
+                  campesina de la época. Julia lo admira sin que él lo sepa.
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col historia"></div>
+        </div>
       </div>
     </div>
   </body>

@@ -84,6 +84,7 @@ h2 {
   width: 100%;
   padding-bottom: 56.25%; /* 16:9 -> 9 / 16 = 0.5625 */
   height: 0;
+  border-style: solid;
 }
 
 .video-container iframe {
@@ -194,8 +195,8 @@ a:hover {
 }
 
 .simbolo {
-  font-family: "Arial Unicode MS", "Segoe UI Symbol", "Noto Sans Symbols",
-    sans-serif;
+  font-family:
+    "Arial Unicode MS", "Segoe UI Symbol", "Noto Sans Symbols", sans-serif;
   font-size: 1.2em;
 }
 
@@ -207,24 +208,25 @@ a:hover {
   text-decoration: none;
   border-radius: 8px;
   font-size: 16px;
- 
 }
 
-.contenedor-arbol-genealogico{
+.contenedor-arbol-genealogico {
   width: 100%;
   overflow-y: hidden;
   overflow-x: auto;
   background-color: #fffcf2;
   position: relative;
+  border-style: solid;
+  border-width: 2px;
 }
 
-.contenedor-arbol-genealogico img{
+.contenedor-arbol-genealogico img {
   width: 100%;
   min-width: 1000px;
   max-width: none;
 }
 
-.cuadro-personaje{
+.cuadro-personaje {
   /*
   border-style: solid;
   border-color: red;
@@ -232,32 +234,41 @@ a:hover {
   position: absolute;
 }
 
-.cuadro-personaje:hover{
+.cuadro-personaje:hover {
   cursor: pointer;
-
 }
 
-#info-personajes{
+/*
+#info-personajes {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  /*background-color: rgba(237, 245, 145, 0.4);*/
-  background-color: rgba(237, 245, 145);
+  height: 80%;
+  //background-color: rgba(237, 245, 145, 0.4);
+  //background-color: rgba(237, 245, 145);
+  background-color: #fff8e4;
   visibility: hidden;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 0px;
+  grid-template-columns: repeat(3, minmax(0, 33.33%));
+  justify-content: space-between;
 }
+  */
 
-.col{
-  padding: 20px;
+/*
+.col {
+  padding: 0;
+  margin: 0;
   border-style: solid;
   border-width: 1px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
+*/
 
-#boton-cerrar{
+#boton-cerrar {
   font-size: 30px;
   position: fixed;
   top: 0;
@@ -266,18 +277,121 @@ a:hover {
   margin: 0;
 }
 
-#boton-cerrar:hover{
+#boton-cerrar:hover {
   cursor: pointer;
 }
 
-#boton-cerrar b{
+#boton-cerrar b {
   padding: 0;
   margin: 0;
 }
 
+#ventana-personajes {
+  background-color: #fff8e4;
+  position: fixed;
+  top: 0;
+  height: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+}
 
+.info-personajes {
+  height: 90%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 33.33%));
+}
 
+.col {
+  padding: 0;
+  margin: 0;
+  /*
+  border-style: solid;
+  border-width: 1px;
+  */
+}
 
+.imagen {
+  /* background-color: green; */
+  position: relative;
+}
 
+.tabla {
+  font-family: "Playwrite DE Grund", cursive;
+  font-size: 18px;
+  color: #273617;
+  background-color: #fffcf2;
+  padding: 20px;
+  height: 90%;
+}
 
+.tabla td {
+  border-style: solid;
+  border-width: 2px;
+  padding: 10px;
+}
 
+.contenedor-imagen-personaje {
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(0, 0, 0);
+  max-width: 100%;
+  height: 80%;
+  max-height: 80%;
+  position: absolute;
+  left: 25%;
+  bottom: 10%;
+  background-color: #fffcf2;
+}
+
+#imagen-personaje {
+  height: 100%;
+  max-width: 100%;
+}
+
+.contenedor-nombre-personajes {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  font-size: 26px;
+  padding-top: 1%;
+  margin: 0;
+  height: 9%;
+}
+
+.contenedor-nombre-personajes h2 {
+  margin: 0;
+  padding: 0;
+}
+/*
+
+.contenedor-imagen-personaje {
+  border-style: solid;
+  border-color: red;
+  height: auto;
+  width: auto;
+  padding: 0;
+  position: relative;
+}
+
+.imagen-personaje {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
+.nombre-personajes{
+  background-color: blue;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.ventana-personajes{
+  width: 100%;
+  height: 100%;
+
+}
+  */

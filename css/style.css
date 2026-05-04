@@ -424,6 +424,7 @@ a:hover {
   .contenedor-imagen-personaje {
     position: relative;
     width: 40%;
+    max-width: 300px;
     padding: 0;
     margin: 0;
     margin-left: 5%;

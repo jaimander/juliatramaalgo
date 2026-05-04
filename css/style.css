@@ -443,6 +443,7 @@ a:hover {
   .historia {
     width: 100%;
     margin-top: 50px;
+    margin-bottom: 100px;
   }
 
   .contenedor-historia-personaje {
@@ -453,5 +454,6 @@ a:hover {
     margin-left: 10%;
     padding-top: 0;
     box-sizing: border-box;
+    
   }
 }

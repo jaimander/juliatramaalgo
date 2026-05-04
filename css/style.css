@@ -442,6 +442,7 @@ a:hover {
   /* historia */
   .historia {
     width: 100%;
+    height: auto;
     margin-top: 50px;
     margin-bottom: 100px;
   }

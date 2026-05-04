@@ -318,7 +318,7 @@ a:hover {
 
 .tabla {
   font-family: "Playwrite DE Grund", cursive;
-  font-size: 18px;
+  font-size: 16px;
   color: #273617;
   background-color: #fffcf2;
   padding: 20px;
@@ -357,6 +357,14 @@ a:hover {
   padding-top: 1%;
   margin: 0;
   height: 9%;
+}
+
+.historia {
+  padding: 40px;
+}
+
+.contenedor-historia-personaje {
+  
 }
 
 .contenedor-nombre-personajes h2 {

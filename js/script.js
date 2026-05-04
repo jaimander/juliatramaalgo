@@ -15,6 +15,241 @@ setInterval(() => {
   imagenOveja.src = archivoOveja[indice];
 }, 1000);
 
+// árbol genealógico
+
+const personajes = {
+  hilana: {
+    nombre: "Hilana",
+    imagen: "assets/personajes/Hilana_.png",
+    datos: [
+      { label: "Año de nacimiento", valor: "1913" },
+      { label: "Edad en el juego", valor: "33 años (1946)" },
+      { label: "Oficio", valor: "Hilandera. Responsable de la crianza." },
+      {
+        label: "Rasgo central",
+        valor:
+          "Práctica, eficiente, cariñosa pero sin excesos. El pilar silencioso de la familia.",
+      },
+      {
+        label: "Relación con Julia",
+        valor:
+          "La primera maestra real de Julia. Le enseña a hilar y a torcer el hilo con facilidad destacable.",
+      },
+    ],
+  },
+
+  tramulo: {
+    nombre: "Trámulo",
+    imagen: "assets/personajes/Tramulo_.png",
+    datos: [
+      { label: "Año de nacimiento", valor: "1906" },
+      { label: "Edad en el juego", valor: "40 años (1946)" },
+      {
+        label: "Oficio",
+        valor: "Tejedor de ruanas en telar de palo. Ganadero menor.",
+      },
+      {
+        label: "Rasgo central",
+        valor:
+          "Hombre de pocas palabras y manos muy hábiles. Enseña con el ejemplo, no con el discurso.",
+      },
+      {
+        label: "Relación con Julia",
+        valor:
+          "Padre amoroso pero contenido, como lo permite la cultura campesina de la época. Julia lo admira sin que él lo sepa.",
+      },
+    ],
+  },
+
+  lucia: {
+    nombre: "Lucía",
+    imagen: "assets/personajes/Lucia_.png",
+    datos: [
+      { label: "Año de nacimiento", valor: "1943" },
+      { label: "Edad en el juego", valor: "32 años (1975)" },
+      {
+        label: "Oficio",
+        valor: "",
+      },
+      {
+        label: "Función narrativa",
+        valor:
+          "Poner en contexto la vida social del caserío y la tensión entre el tejido y el cultivo de cebolla.",
+      },
+      {
+        label: "Relación con Julia",
+        valor: "Prima menor. Clienta. Red de apoyo cotidiano.",
+      },
+    ],
+  },
+
+  augusto: {
+    nombre: "Augusto",
+    imagen: "assets/personajes/Augusto_.png",
+    datos: [
+      { label: "Año de nacimiento", valor: "1929" },
+      { label: "Edad en el juego", valor: "17 años (1946)" },
+      {
+        label: "Oficio",
+        valor: "Jornalero. Ayudante del padre en las labores del campo.",
+      },
+      {
+        label: "Rasgo central",
+        valor:
+          "El hijo que tomó el camino del campo, no del telar. Representa la bifurcación de los oficios.",
+      },
+      {
+        label: "Relación con Julia",
+        valor:
+          "Hermano mayor distante por la diferencia de edad, pero figura de referencia. Julia teje la ruana que Trámulo le está haciendo.",
+      },
+    ],
+  },
+
+  julia: {
+    nombre: "Julia",
+    imagen: "assets/personajes/Julia idle.png",
+    datos: [
+      { label: "Año de nacimiento", valor: "1940" },
+      {
+        label: "Edades en el juego",
+        valor: "6 años (1946) ─ 35 años (1975) ─ 85 años (2025)",
+      },
+      {
+        label: "Oficio",
+        valor:
+          "Tejedora de ruanas, hilandera. Ama de casa y criadora de 12 hijos.",
+      },
+      {
+        label: "Rasgo central",
+        valor:
+          "Mujer que aprendió a tejer sin que se lo propusieran, y que transmitió el oficio sin proponérselo. Su vida es la trama de la historia.",
+      },
+      {
+        label: "Rol en el juego",
+        valor:
+          "Protagonista en segunda persona. El jugador asume el papel de Julia (1946-1975).",
+      },
+    ],
+  },
+
+  urdeliano: {
+    nombre: "Urdeliano",
+    imagen: "assets/personajes/Urdeliano.png",
+    datos: [
+      { label: "Año de nacimiento", valor: "1927" },
+      { label: "Edades en el juego", valor: "48 años (1975)" },
+      {
+        label: "Oficio",
+        valor:
+          "Carpintero artesano, tallador de torteros y herramientas de tejido. Ganadero menor.",
+      },
+      {
+        label: "Rasgo central",
+        valor:
+          "Hombre práctico que entiende el valor del tejido aunque no sea su oficio principal. Sostén silencioso de Julia.",
+      },
+      {
+        label: "Relación con Julia",
+        valor:
+          "Esposo compañero pero no dominante. Los dos tienen su oficio propio y se respetan en ello.",
+      },
+    ],
+  },
+
+  marco: {
+    nombre: "Marco",
+    imagen: "assets/personajes/Marco.png",
+    datos: [
+      { label: "Año de nacimiento", valor: "1975" },
+      { label: "Edades en el juego", valor: "5 meses (1975) ─ 50 años (2025)" },
+      {
+        label: "Oficio",
+        valor:
+          "Tejedor artesanal de ruanas. Propietario del taller-almacén donde transcurre el tercer acto.",
+      },
+      {
+        label: "Rasgo central",
+        valor:
+          "El último tejedor de la familia. Mezcla de tradición y adaptación, ya que aprende patrones andinos por internet con profesores de Chile, busca apoyo del Estado, sabe que el mercado es hostil y teje igual.",
+      },
+      {
+        label: "Relación con Julia",
+        valor:
+          "Hijo y discípulo. Julia lo mira tejer como su padre la miraba a ella.",
+      },
+    ],
+  },
+
+  claudia: {
+    nombre: "Claudia",
+    imagen: "assets/personajes/claudia vacio.png",
+    datos: [
+      { label: "Año de nacimiento", valor: "" },
+      { label: "Edades en el juego", valor: "" },
+      {
+        label: "Oficio",
+        valor: "",
+      },
+      {
+        label: "Función narrativa",
+        valor: "",
+      },
+      {
+        label: "Relación con Julia",
+        valor: "",
+      },
+    ],
+  },
+
+  pedro: {
+    nombre: "Pedro",
+    imagen: "assets/personajes/pedro vacio.png",
+    datos: [
+      { label: "Año de nacimiento", valor: "1959" },
+      { label: "Edades en el juego", valor: "16 años (1975)" },
+      {
+        label: "Oficio",
+        valor:
+          "Aún indefinido a los 16. En la adultez: probable jornalero o cultivador.",
+      },
+      {
+        label: "Rasgo central",
+        valor:
+          "El hijo mayor. Bromista, afectuoso, ajeno al tejido pero no al afecto familiar.",
+      },
+      {
+        label: "Relación con Julia",
+        valor: "Hijo de confianza en la casa. Julia lo regaña con cariño.",
+      },
+    ],
+  },
+
+  lisandro: {
+    nombre: "Lisandro",
+    imagen: "assets/personajes/Lisandro.png",
+    datos: [
+      { label: "Año de nacimiento", valor: "2015" },
+      { label: "Edades en el juego", valor: "10 años (2025)" },
+      {
+        label: "Oficio (en formación)",
+        valor:
+          "Aprende a tejer bufandas. Ayuda a cardar y a ordenar el taller.",
+      },
+      {
+        label: "Rasgo central",
+        valor:
+          "El niño que creció entre telares y smartphones al mismo tiempo. La pregunta abierta del juego.",
+      },
+      {
+        label: "Relación con Julia",
+        valor:
+          "Nieto y alumno ocasional. Julia lo llama “papito” y “mi chinito”.",
+      },
+    ],
+  },
+};
+
 const img = document.querySelector(".contenedor-arbol-genealogico img");
 const cuadroHilana = document.querySelector("#cuadro-hilana");
 const cuadroTramulo = document.querySelector("#cuadro-tramulo");
@@ -192,13 +427,12 @@ document.addEventListener("click", function (e) {
 
   // equivalente al segundo código
   console.log("Nombre:", cuadro.dataset.nombre);
+  const id = cuadro.dataset.nombre;
+  const personaje = personajes[id];
 
-  // Hilana
-  if (cuadro.dataset.nombre == "Hilana") {
-    ventanaPersonajes.style.visibility = "visible";
-    imagenPersonaje.src = "assets/personajes/Hilana_.png";
-    nombrePersonaje.textContent = "Hilana";
-  }
+  actualizarFicha(personaje);
+
+  ventanaPersonajes.style.visibility = "visible";
 
   // Tramulo
   if (cuadro.dataset.nombre == "Tramulo") {
@@ -269,3 +503,19 @@ let botonCerrar = document.getElementById("boton-cerrar");
 botonCerrar.onclick = function () {
   ventanaPersonajes.style.visibility = "hidden";
 };
+
+function actualizarFicha(personaje) {
+  nombrePersonaje.textContent = personaje.nombre;
+  imagenPersonaje.src = personaje.imagen;
+  const tabla = document.getElementById("tabla-personaje");
+  tabla.innerHTML = "";
+
+  personaje.datos.forEach((item) => {
+    const fila = document.createElement("tr");
+    fila.innerHTML = `
+      <td>${item.label}</td>
+      <td>${item.valor}</td>
+    `;
+    tabla.appendChild(fila);
+  });
+}

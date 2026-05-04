@@ -323,6 +323,8 @@ a:hover {
   /*background-color: #fffcf2;*/
   padding: 20px;
   height: 90%;
+  margin-top: 0;
+  padding-top: 19px;
 }
 
 .tabla td {
@@ -365,6 +367,8 @@ a:hover {
   padding-left: 50px;
   height: 90%;
   overflow-y: auto;
+  margin-top: 0;
+  padding-top: 20px;
 }
 
 .contenedor-historia-personaje {
@@ -455,6 +459,5 @@ a:hover {
     margin-left: 10%;
     padding-top: 0;
     box-sizing: border-box;
-    
   }
 }

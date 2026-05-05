@@ -399,12 +399,13 @@ a:hover {
   background-color: #fff8e4;
 }
 
-
 @media (max-width: 1300px) {
   .col {
     width: 80%;
     padding: 0;
     margin: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .info-personajes {
@@ -420,18 +421,27 @@ a:hover {
   .imagen {
     margin-top: 50px;
     width: 100%;
-    max-width: 300px;
     margin-left: auto;
     margin-right: auto;
+    max-width: 150px;
   }
 
   .contenedor-imagen-personaje {
     position: relative;
-    width: 40%;
-    max-width: 300px;
+    width: 100%;
     padding: 0;
     margin: 0;
-    margin-left: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+  }
+
+  #imagen-personaje {
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 100%;
+    height: auto;
   }
 
   /* tabla */
@@ -464,7 +474,7 @@ a:hover {
     width: 80%;
     padding: 30px;
     margin: 0;
-     max-width: 600px;
+    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 0;

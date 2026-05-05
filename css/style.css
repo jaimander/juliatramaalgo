@@ -399,6 +399,7 @@ a:hover {
   background-color: #fff8e4;
 }
 
+
 @media (max-width: 1300px) {
   .col {
     width: 80%;
@@ -419,6 +420,9 @@ a:hover {
   .imagen {
     margin-top: 50px;
     width: 100%;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .contenedor-imagen-personaje {
@@ -442,7 +446,9 @@ a:hover {
   #tabla-personaje {
     position: relative;
     width: 80%;
-    margin-left: 10%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   /* historia */
@@ -455,10 +461,12 @@ a:hover {
 
   .contenedor-historia-personaje {
     position: relative;
-    max-width: 80%;
+    width: 80%;
     padding: 50px;
     margin: 0;
-    margin-left: 10%;
+     max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 0;
     box-sizing: border-box;
   }

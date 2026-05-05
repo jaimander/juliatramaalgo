@@ -453,6 +453,7 @@ let botonCerrar = document.getElementById("boton-cerrar");
 botonCerrar.onclick = function () {
   ventanaPersonajes.style.visibility = "hidden";
   document.body.style.overflowY = "visible";
+  imagenPersonaje.src = "";
 };
 
 function actualizarFicha(personaje) {

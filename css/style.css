@@ -294,6 +294,9 @@ a:hover {
   width: 100%;
   height: 100%;
   visibility: hidden;
+  overflow-y: auto;
+  padding: 0;
+  margin: 0;
 }
 
 .info-personajes {
@@ -314,6 +317,9 @@ a:hover {
 .imagen {
   /* background-color: green; */
   position: relative;
+  margin-top: 0;
+  padding-top: 19px;
+  background-color: #f98435;
 }
 
 .tabla {
@@ -343,7 +349,7 @@ a:hover {
   max-height: 80%;
   position: absolute;
   left: 25%;
-  bottom: 10%;
+  top: 25px;
   background-color: #fffcf2;
 }
 
@@ -427,6 +433,8 @@ a:hover {
     margin-right: auto;
     max-width: 150px;
   }
+
+  
 
   .contenedor-imagen-personaje {
     position: relative;

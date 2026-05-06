@@ -1,3 +1,8 @@
+document.addEventListener("DOMContentLoaded", () => {
+  precargarImagenes();
+  //console.log("pagina cargada");
+})
+
 let archivoOveja = [];
 
 archivoOveja[0] = "assets/oveja01.png";
@@ -428,10 +433,29 @@ let nombrePersonaje = document.getElementById("nombre-personaje");
 let imagenPersonaje = document.getElementById("imagen-personaje");
 let historiaPersonaje = document.getElementById("historia-personaje");
 
+let precargadas = false;
+
+function precargarImagenes() {
+  if (precargadas) return;
+
+  Object.values(personajes).forEach(p => {
+    const img = new Image();
+    img.src = p.imagen;
+  });
+
+  precargadas = true;
+
+  console.log("precargar imagenes");
+}
+
+
+
 document.addEventListener("click", function (e) {
   const cuadro = e.target.closest(".cuadro-personaje");
 
   if (!cuadro) return;
+
+  //precargarImagenes();
 
   // equivalente al console.log del primer código
   console.log("Click en:", cuadro);
